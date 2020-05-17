@@ -76,7 +76,7 @@ component extends="tests.resources.AbstractSchemaBuilderSpec" {
 
     function enum() {
         return [
-            "CREATE TYPE ""tshirt_size"" AS ENUM (""S"", ""M"", ""L"", ""XL"", ""XXL"")",
+            "CREATE TYPE ""tshirt_size"" AS ENUM ('S', 'M', 'L', 'XL', 'XXL')",
             "CREATE TABLE ""employees"" (""tshirt_size"" tshirt_size NOT NULL)"
         ];
     }
